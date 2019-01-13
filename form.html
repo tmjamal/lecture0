@@ -4,11 +4,22 @@
     <meta charset="utf-8">
     <title>My form page</title>
     <style media="screen">
+
+    @media (min-width: 500px){
+      body{
+        background-color: lightgray;
+      }
+    }
+    @media (max-width:499px){
+      body{
+        background-color: Blue;
+      }
+    }
       input[type=text]{
         background-color: teal;
       }
       input[type=number]{
-        background-color: lightgray;
+        background-color: yellow;
       }
 
       #top{
@@ -41,13 +52,19 @@
         background-color: yellow;
       }
       @media print {
-        .screen-only{
+        .screen-only {
           display: none;
         }
-      }
+        }
+
+
     </style>
   </head>
   <body>
+    <div>
+        <h1>Welcome to my webpage!</h1>
+    </div>
+
     <form>
       <div class="">
         <input type="text" placeholder="username" name="User Name">
