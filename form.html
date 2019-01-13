@@ -3,8 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>My form page</title>
-    <style media="screen">
-
+    <meta name="viewport" content:"width=device-width, initial-scale=1.0">
+    <style >
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .container >div{
+        background-color: springgreen;
+        font-size: 20px;
+        margin:20px;
+        padding:20px;
+        width:200px;
+      }
     @media (min-width: 500px){
       body{
         background-color: lightgray;
@@ -15,11 +26,21 @@
         background-color: Blue;
       }
     }
+    @media (min-width:500px){
+      h1::before{
+              content:"Wide >> "
+      }
+    }
+    @media (max-width:499px){
+      h1::before{
+                content:"Narrow >> "
+      }
+    }
       input[type=text]{
         background-color: teal;
       }
       input[type=number]{
-        background-color: yellow;
+        background-color: lightgray;
       }
 
       #top{
@@ -56,11 +77,24 @@
           display: none;
         }
         }
-
-
     </style>
   </head>
+
   <body>
+    <div class="container">
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+      <div class="">A. There is no God but Allah and Prophet Muhammed is his final messenger. Through him final teastament 'Quran' is revealed for mankind </div>
+    </div>
     <div>
         <h1>Welcome to my webpage!</h1>
     </div>
