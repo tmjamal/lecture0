@@ -36,6 +36,15 @@
         content: "\21d2 click here:";
         font-weight: bold;
       }
+      p::selection {
+        color: red;
+        background-color: yellow;
+      }
+      @media print {
+        .screen-only{
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -316,6 +325,11 @@
       <li><a href="#">www.nicheoftruth.org</a></li>
       <li><a href="#">www.sius.com</a></li>
     </ul>
+    <div class="">
+      <p>What is islam?</p>
+      <p> Who is Mohammed(pbuh)</p>
+      <p class="screen-only">How to be a Muslim? This won't appear when you print this page.</p>
+    </div>
     <div itemprop="articleBody">
     		<h3>WHO IS ALLAH?</h3>
     <h4>By Abdurrahman Robert Squires</h4>
